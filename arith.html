@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Arithmetic Operations</title>
+<script language="javascript">
+function sum()
+{
+var a,b,sum;
+a=parseInt(document.t.text1.value);
+b=parseInt(document.t.text2.value);
+sum=a+b;
+document.t.text3.value=sum;
+}
+function mul()
+{
+var a,b,mul;
+a=parseInt(document.t.text1.value);
+b=parseInt(document.t.text2.value);
+mul=a*b;
+document.t.text3.value=mul;
+}
+function sub()
+{
+var a,b,sub;
+a=parseInt(document.t.text1.value);
+b=parseInt(document.t.text2.value);
+sub=a-b;
+document.t.text3.value=sub;
+}
+function div()
+{
+var a,b,div;
+a=parseInt(document.t.text1.value);
+b=parseInt(document.t.text2.value);
+div=a/b;
+document.t.text3.value=div;
+}
+</script>
+</head>
+<body>
+<form name=t>
+<table>
+<tr><td>First number:</td>
+<td><input type="text" name="text1"></td>
+</tr>
+<tr><td>Second number:</td>
+<td><input type="text" name="text2"></td>
+</tr>
+<tr>
+<td><label>Enter your choice:</label></td>
+</tr>
+<tr><td><input type="button" value="sum" onclick="sum()"></td>
+</tr>
+<tr><td><input type="button" value="mul" onclick="mul()" colspan="2"></td>
+</tr>
+<tr><td><input type="button" value="sub" onclick="sub()" colspan="2"></td>
+</tr>
+<tr><td><input type="button" value="div" onclick="div()" colspan=2></td>
+</tr>
+<tr><td>result</td>
+<td><input type="text" name="text3"><br></td></tr>
+<tr><td><input type="submit"></td></tr>
+</table></form></body></html>
